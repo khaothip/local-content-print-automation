@@ -145,7 +145,7 @@ _(The perfect one)_
     _(Example highlight wrong block 1)_
    ![Highlighting attempt landing on the wrong block, example 1](/Image/Highlighted%20PDF%20(Failed%201).png)
 
-   _ (Example highlight wrong block 2)_
+   _(Example highlight wrong block 2)_
    ![Highlighting attempt landing on the wrong block, example 2](/Image/Highlighted%20PDF%20(Failed%202).png)
 
 1. **The highlight disappears when the page is printed in black and white.** The final documents are
