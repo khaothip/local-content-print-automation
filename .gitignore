@@ -1,0 +1,19 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Never commit real documents / business data
+*.pdf
+*.xlsx
+*.xls
+data/
