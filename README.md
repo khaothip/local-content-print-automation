@@ -131,7 +131,6 @@ other_page_items = [[4, 24], [25, 40], [41, 56], [57, 72], [73, 88]]  # repeatin
 `highlight_page()` then draws a semi-transparent yellow rectangle (`fill=(1, 1, 0), fill_opacity=0.3`)
 over the target block on each relevant page before merging.
 
-_(The perfect one)_
 ![Highlighting attempt working correctly on one document](/Image/Perfect%20Highlighted%20PDF.png)
 
 **In practice, this one attempt surfaced two real problems:**
@@ -142,13 +141,10 @@ _(The perfect one)_
    tried once rather than debugged and re-tested across more documents, it's unclear whether that's a
    fixable edge case or a deeper issue with relying on block order alone.
 
-    _(Example highlight wrong block 1)_
    ![Highlighting attempt landing on the wrong block, example 1](/Image/Highlighted%20PDF%20(Failed%201).png)
-
-   _(Example highlight wrong block 2)_
    ![Highlighting attempt landing on the wrong block, example 2](/Image/Highlighted%20PDF%20(Failed%202).png)
 
-1. **The highlight disappears when the page is printed in black and white.** The final documents are
+2. **The highlight disappears when the page is printed in black and white.** The final documents are
    printed in grayscale to save ink. A 30%-opacity yellow fill converts to an extremely light gray once
    desaturated — on a printed page, it's essentially invisible. Even where the highlight landed on the
    right block, it wouldn't have been visible to the reviewer holding the printed page.
